@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173b2c">
+<meta name="description" content="Conheça o No Capricho Refeições, no bairro Alvorada em Manaus. Veja fotos dos pratos e do ambiente e fale pelo WhatsApp.">
+<title>No Capricho Refeições | Manaus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--g:#173b2c;--g2:#24533c;--gold:#d9ad54;--cream:#fbf7ed;--paper:#fffdf8;--ink:#252b25;--muted:#6c756c;--line:#e9e1d2}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}img{width:100%;height:100%;object-fit:cover;display:block}
+.announce{background:#102d21;color:#f7f1e5;text-align:center;padding:9px;font-size:11px;letter-spacing:.08em}
+header{position:sticky;top:0;z-index:10;background:#fbf7edf2;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{max-width:1160px;margin:auto;padding:13px 22px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px}.mark{width:43px;height:43px;border-radius:50%;display:grid;place-items:center;background:var(--g);color:var(--gold);font-size:23px}.brand b{display:block;color:var(--g);font-size:14px;line-height:1.2}.brand small{font-size:10px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
+.links{display:flex;gap:23px;font-size:12px;font-weight:700}.links a:hover{color:#98702e}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:99px;padding:13px 20px;font-size:13px;font-weight:700;transition:.2s}.btn:hover{transform:translateY(-2px)}.gold{background:var(--gold);color:#172b20}.outline{border:1px solid #ffffff80;color:white}
+.hero{display:grid;grid-template-columns:1fr 1fr;background:var(--g);color:white;min-height:570px}.copy{padding:85px max(28px,calc((100vw - 1160px)/2));align-self:center}.kicker{font-size:11px;text-transform:uppercase;letter-spacing:.2em;color:var(--gold);font-weight:700}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif}h1{font-size:clamp(45px,6vw,75px);line-height:1.02;margin:17px 0}h2{font-size:clamp(33px,4vw,47px);line-height:1.1;color:var(--g);margin:10px 0 14px}
+.copy p{max-width:480px;color:#e1e9df;font-size:15px}.stars{color:var(--gold);font-weight:800;letter-spacing:2px}.stars small{color:#edf0e9;letter-spacing:0;font-size:12px;font-weight:500;margin-left:7px}.actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:28px}
+.heroimg{min-height:570px;position:relative}.heroimg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--g),transparent 27%),linear-gradient(0deg,#0005,transparent 45%)}.heroimg img{object-position:center}.label{position:absolute;z-index:2;bottom:25px;right:25px;background:#fffdf0ed;color:var(--g);padding:12px 16px;border-radius:10px;font-size:12px;font-weight:700}
+section.content{max-width:1160px;margin:auto;padding:78px 22px}.head{text-align:center;max-width:680px;margin:0 auto 34px}.head .kicker{color:#98702e}.head p{color:var(--muted);font-size:14px;margin:0}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.feature{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:23px}.feature .ico{font-size:23px}.feature h3{color:var(--g);font-size:21px;margin:8px 0 5px}.feature p{font-size:13px;color:var(--muted);margin:0}
+.gallerybg{background:#f1eadb}.gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:185px;gap:13px}.photo{position:relative;overflow:hidden;border-radius:15px;background:#ddd}.photo img{transition:transform .45s}.photo:hover img{transform:scale(1.045)}.photo:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#0008)}.photo span{position:absolute;z-index:2;bottom:12px;left:14px;color:white;font-weight:700;font-size:12px;text-shadow:0 1px 4px #000}
+.p1{grid-column:span 6;grid-row:span 2}.p2{grid-column:span 3;grid-row:span 2}.p3,.p4{grid-column:span 3}.p5,.p6,.p7{grid-column:span 4}.note{text-align:center;color:var(--muted);font-size:12px;max-width:700px;margin:25px auto 0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.aboutimg{height:410px;border-radius:18px;overflow:hidden;box-shadow:16px 16px 0 #e9dfca}.about p{color:var(--muted);font-size:14px}.quote{border-left:3px solid var(--gold);padding:8px 0 8px 16px;color:var(--g);font-weight:700;margin:20px 0}
+.contact{background:var(--g);color:white}.contactinner{max-width:1160px;margin:auto;padding:70px 22px;display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.contact h2{color:white}.contact p{color:#dce6dc;max-width:500px}.box{background:#fffdf0;color:var(--ink);padding:25px;border-radius:17px}.item{padding:11px 0;border-bottom:1px solid var(--line);font-size:12px}.item:last-of-type{border:0}.item b{display:block;color:var(--g);margin-bottom:3px}.box .btn{width:100%;margin-top:15px}
+footer{background:#10291e;color:#d6e0d6;text-align:center;padding:23px;font-size:11px}footer b{color:white}
+@media(max-width:760px){nav{padding:12px 15px}.links{gap:11px}.links a{font-size:10px}.navcta{display:none}.hero{grid-template-columns:1fr}.copy{padding:60px 23px 42px}.heroimg{height:310px;min-height:310px}.heroimg:after{background:linear-gradient(0deg,#173b2c22,transparent 50%)}.features{grid-template-columns:1fr}.about,.contactinner{grid-template-columns:1fr}.aboutimg{height:310px}.gallery{grid-auto-rows:130px;gap:8px}.p1{grid-column:span 7}.p2{grid-column:span 5}.p3,.p4{grid-column:span 6}.p5,.p6,.p7{grid-column:span 4}}
+@media(max-width:450px){.brand b{font-size:12px}.mark{width:38px;height:38px}.links{gap:9px}.links a{font-size:9px}.gallery{grid-auto-rows:105px}.photo{border-radius:9px}.photo span{font-size:9px;left:8px;bottom:7px}.heroimg{height:270px;min-height:270px}}
+</style></head><body>
+<div class="announce">📍 ALVORADA · MANAUS – AMAZONAS &nbsp; • &nbsp; SABOR E ACOLHIMENTO</div>
+<header><nav>
+<a class="brand" href="#inicio"><span class="mark">🍲</span><span><b>NO CAPRICHO REFEIÇÕES</b><small>Tacacaria e bistrô</small></span></a>
+<div class="links"><a href="#sobre">O restaurante</a><a href="#sabores">Sabores</a><a href="#contato">Localização</a></div>
+<a class="btn navcta" style="background:var(--g);color:white;padding:10px 15px" href="https://wa.me/5592988442736?text=Ol%C3%A1!%20Encontrei%20o%20No%20Capricho%20pelo%20site." target="_blank" rel="noopener">Fale conosco ↗</a>
+</nav></header>
+<section class="hero" id="inicio"><div class="copy">
+<div class="kicker">Uma experiência com sabor regional</div><h1>O sabor que<br>reúne pessoas.</h1>
+<p>Conheça o No Capricho Refeições: um cantinho em Alvorada, Manaus, para apreciar pratos cheios de personalidade e um ambiente acolhedor.</p>
+<div class="stars">★★★★★ <small>5,0 · 7 avaliações informadas</small></div>
+<div class="actions"><a class="btn gold" href="https://wa.me/5592988442736?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20restaurante." target="_blank" rel="noopener">Conversar no WhatsApp ↗</a><a class="btn outline" href="#sabores">Ver fotos dos pratos</a></div>
+</div><div class="heroimg"><img src="images/tacaca.jpg" alt="Tacacá servido no restaurante" fetchpriority="high"><div class="label">🍃 Tradição e sabor em Manaus</div></div></section>
+<section class="content" id="sobre"><div class="head"><div class="kicker">Muito prazer!</div><h2>Um lugar para aproveitar cada momento</h2><p>Conheça um pouco dos sabores e do espaço do No Capricho Refeições.</p></div>
+<div class="features"><article class="feature"><div class="ico">🍤</div><h3>Sabores regionais</h3><p>Fotos de preparos e especialidades que fazem parte da experiência da casa.</p></article><article class="feature"><div class="ico">🪑</div><h3>Ambiente acolhedor</h3><p>Um espaço descontraído para compartilhar uma boa refeição.</p></article><article class="feature"><div class="ico">⭐</div><h3>Bem avaliado</h3><p>Nota 5,0 de 5, com 7 avaliações conforme as informações fornecidas.</p></article></div></section>
+<div class="gallerybg" id="sabores"><section class="content"><div class="head"><div class="kicker">Um convite para conhecer</div><h2>Olha só o que espera por você</h2><p>Um gostinho do que você encontra no No Capricho Refeições.</p></div>
+<div class="gallery">
+<figure class="photo p1"><img src="images/farofa-camarao-banana.jpg" alt="Farofa de camarão com banana frita" loading="lazy"><span>Farofa de camarão com banana frita</span></figure>
+<figure class="photo p2"><img src="images/tacaca.jpg" alt="Tacacá servido em cuia" loading="lazy"><span>Tacacá</span></figure>
+<figure class="photo p3"><img src="images/bolinho-de-piracui.jpg" alt="Bolinho de piracuí" loading="lazy"><span>Bolinho de piracuí</span></figure>
+<figure class="photo p4"><img src="images/prato-com-camarao.jpg" alt="Prato preparado com camarões" loading="lazy"><span>Especialidade com camarão</span></figure>
+<figure class="photo p5"><img src="images/pratos-da-casa.jpg" alt="Pratos servidos na casa" loading="lazy"><span>Pratos da casa</span></figure>
+<figure class="photo p6"><img src="images/entrada-regional.jpg" alt="Entrada regional" loading="lazy"><span>Para começar bem</span></figure>
+<figure class="photo p7"><img src="images/prato-regional.jpg" alt="Prato regional com acompanhamentos" loading="lazy"><span>Sabores regionais</span></figure></div>
+<p class="note">Pratos, ingredientes, valores e disponibilidade podem variar. Consulte diretamente o restaurante antes de fazer seu pedido.</p></section></div>
+<section class="content"><div class="about"><div class="aboutimg"><img src="images/ambiente-restaurante.jpg" alt="Interior do restaurante No Capricho" loading="lazy"></div><div><div class="kicker" style="color:#98702e">Seu espaço em Alvorada</div><h2>Chegue, escolha seu lugar e aproveite.</h2><p>O No Capricho Refeições tem um ambiente simples e acolhedor, com detalhes que dão personalidade ao espaço. Veja um pouco do restaurante e venha conhecer de perto.</p><div class="quote">“Comida maravilhosa” — avaliação compartilhada na página do restaurante.</div><a class="btn" style="background:var(--g);color:white" href="https://www.google.com/maps/search/?api=1&query=R.+Independ%C3%AAncia+-+Alvorada%2C+Manaus+-+AM%2C+69043-020" target="_blank" rel="noopener">Ver como chegar ↗</a></div></div></section>
+<section class="contact" id="contato"><div class="contactinner"><div><div class="kicker">Estamos por aqui</div><h2>Venha conhecer o No Capricho.</h2><p>Ficou com vontade de experimentar? Entre em contato para consultar o cardápio, confirmar o horário e tirar suas dúvidas.</p><a class="btn gold" href="https://wa.me/5592988442736?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20No%20Capricho." target="_blank" rel="noopener">Chamar no WhatsApp ↗</a></div>
+<div class="box"><div class="item"><b>📍 Endereço</b>R. Independência – Alvorada, Manaus – AM, 69043-020</div><div class="item"><b>📞 Telefone / WhatsApp</b>(92) 98844-2736</div><div class="item"><b>🕒 Horário informado</b>Fechamento às 23h. Confirme o horário do dia pelo WhatsApp.</div><div class="item"><b>⭐ Avaliação</b>5,0 estrelas · 7 avaliações informadas</div><a class="btn gold" href="https://www.google.com/maps/search/?api=1&query=R.+Independ%C3%AAncia+-+Alvorada%2C+Manaus+-+AM%2C+69043-020" target="_blank" rel="noopener">Abrir localização no mapa ↗</a></div></div></section>
+<footer><b>NO CAPRICHO REFEIÇÕES · TACACARIA E BISTRÔ</b><br>Alvorada · Manaus – AM<br>© <span id="year"></span> · Todos os direitos reservados.</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script></body></html>
